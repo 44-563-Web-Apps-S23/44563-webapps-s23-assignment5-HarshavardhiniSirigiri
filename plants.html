@@ -2,6 +2,51 @@
 <html lang="en">
 <head>
   <title>Plants Lab 05 </title>
+  <style>
+    .navbar-brand{
+      background-color: blueviolet;
+    }
+    .nav-item{
+      background-color: aquamarine;
+    }
+    caption{
+      background-color: blue;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .th{
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+    border: 2px solid rgb(92, 150, 177);
+    border-top: 3px solid rgba(82, 61, 151, 0.626);
+    border-bottom: 3px solid rgba(82, 61, 151, 0.626);
+    border-left: 3px solid rgba(82, 61, 151, 0.626);
+    border-right: 3px solid rgba(82, 61, 151, 0.626);
+}
+.td{
+    height:30px;
+    vertical-align: bottom;
+    border: 2px solid rgb(92, 150, 177);
+    border-top: 3px solid rgba(82, 61, 151, 0.626);
+    border-bottom: 3px solid rgba(82, 61, 151, 0.626);
+    border-left: 3px solid rgba(82, 61, 151, 0.626);
+    border-right: 3px solid rgba(82, 61, 151, 0.626);
+}
+.table{
+    height: 30px;
+    vertical-align: bottom;
+    border: 2px solid rgb(87, 89, 205);
+    border-top: 3px solid rgba(82, 61, 151, 0.626);
+    border-bottom: 3px solid rgba(82, 61, 151, 0.626);
+    border-left: 3px solid rgba(82, 61, 151, 0.626);
+    border-right: 3px solid rgba(82, 61, 151, 0.626);
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+tr:nth-child(odd){
+  background-color: aquamarine;
+  </style>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +59,22 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="advanced.html">Intresting Plants</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="advanced.html">ADVANCED</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="basic.html">BASIC</a>
+        </li>
+      </ul>
+  </div>
+</nav>
 <h1>Plants by NagaHarshavardhini Sirigiri</h1>
 <div class="container">
 <div class="row">
@@ -47,7 +108,7 @@
  
 </div>
 <table class="table table-striped" class="table table-bordered" >
-  <caption style="background-color:blue" > NAMES OF SMPL</caption>
+  <caption> NAMES OF SMPL</caption>
   <thead>
     <tr>
       <th scope="col">IndexNo</th>
@@ -105,24 +166,12 @@
   </tbody>
 </table>
 <div class="btn">
-    <button>S</button>
-  </div>
-  <div class="btn">
-    <button>I</button>
-  </div>
-  <div class="btn">
-    <button>R</button>
-  </div>
-  <div class="btn">
-    <button>I</button>
-  </div>
-  <div class="btn">
-    <button>G</button>
-  </div>
-  <div class="btn">
-    <button>I</button>
-  </div>
-
+  <button type="button" >S</button>
+  <button type="button" >I</button>
+  <button type="button" >R</button>
+  <button type="button" >I</button>
+  <button type="button" >G</button>
+  <button type="button" >I</button>
 </div>
 <div class="btn-toolbar" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-success">G</button>
@@ -136,6 +185,22 @@
 <div class="btn-toolbar" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-danger">I</button>
 </div>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="form-group">
+    <label for="Plant" class="form-label">Enter your plant</label>
+    <input type="text" class="form-control" id="exampleInputPlant">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 
 
